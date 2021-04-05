@@ -1,0 +1,127 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2857354100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on OrangHRM login page",
+            "match": {
+              "location": "StepsDefinition.user_is_on_OrangHRM_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4388185200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User should be able to login with valid credentials",
+        "description": "and open a new account",
+        "id": "varify-on-oranghrm-login-functionality;user-should-be-able-to-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 876878400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 293214300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters the \"admin\" and \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 17
+                },
+                {
+                  "val": "admin123",
+                  "offset": 29
+                }
+              ],
+              "location": "StepsDefinition.user_enters_the_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5052247100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "StepsDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8495300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be able to see the dashboard",
+            "match": {
+              "location": "StepsDefinition.user_should_be_able_to_see_the_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Varify on OrangHRM login Functionality",
+    "description": "",
+    "id": "varify-on-oranghrm-login-functionality",
+    "keyword": "Feature",
+    "uri": "features/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Login"
+      }
+    ]
+  }
+]
